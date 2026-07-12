@@ -1,62 +1,168 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
-  <title>Uma821のホームページ(開発中)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ししゃものホームページです。所属、活動サークル、取得資格、参加イベントなどを掲載しています。">
+  <title>ししゃものホームページ</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <h1>Uma821のホームページ(工事中)</h1>
-  </header>
-  <main>
-  <div>
-    <h2>所属</h2>
-    <ul>
-    <li>コンピュータアーキテクチャ研究グループ (2023年10月～)</li>
-    <li>コンピュータアーキテクチャ研究室 (2021年4月～)</li>
-    <li>広島市立大学 情報科学部 情報工学科 (2021年4月～)</li>
-    </ul>
-    <h2>クラブ/サークル</h2>
-    <ul>
-    <li>いちぴろ・エクスプローラー(技術系サークル) (2023年10月～)</li>
-    <li>プログラミング同好会 (2021年度～2022年度)</li>
-    <li>吹奏楽部 (2021年度～2023年度)</li>
-    <li>大学祭実行委員会 システム局 (2023年度)</li>
-    </ul>
-    <h2>資格</h2>
-    <ul>
-    <li>普通自動車第一種運転免許(AT限定) (令和6年3月)</li>
-    <li>基本情報技術者試験 (令和4年度下期)</li>
-    <li>実用数学技能検定 2級合格 (令和2年8月)</li>
-    <li>日本語ワープロ検定試験 準1級合格 (令和2年7月)</li>
-    <!-- <li>全国工業高等学校長協会 情報技術検定試験1級 (令和2年7月)</li> -->
-    <li>日本漢字能力検定2級 取得 (令和2年)
-    <!-- <li>全国工業高等学校長協会 パソコン利用技術検定試験1級 (令和2年1月)</li> -->
-    <!-- <li>全国工業高等学校長協会 計算技術検定試験1級 (令和元年11月)</li> -->
-    <!-- <li>全国工業高等学校長協会 リスニング英語検定試験1級 (令和元年11月)</li> -->
-    <li>ITパスポート試験 (令和元年8月)</li>
-    <li>甲種危険物取扱者免状 取得 (令和元年8月)</li>
-    <li>公益財団法人 日本習字教育財団 生徒部八段 (平成30年)</li>
-    </ul>
-    <h2>参加歴</h2>
-    <ul>
-    <li>Ruby合宿2022春</li>
-    <li>西日本横断サイバーセキュリティ・グランプリ (令和５年度)</li>
-    <li>セキュキャン・キャンプ2024 S06:Cコンパイラゼミ (2024年度)</li>
-    </ul>
-    <h2>アカウント</h2>
-    <ul>
-    <li>𝕏(Twitter): <a href="https://x.com/UMA_821">@UMA_821</a></li>
-    <li>Misskey: <a href="https://misskey.io/@shisyamo_821">@shisyamo_821@misskey.io</a></li>
-    <li>GitHub: <a href="https://github.com/Uma821">@Uma821</a></li>
-    <li>Qiita: <a href="https://qiita.com/UMA821">@UMA821</a></li>
-    <li>AtCoder: <a href="https://atcoder.jp/users/uma821">@uma821</a></li>
-    </ul>
-  </div>
-  </main>
-  <footer>
-    <h3>フッター</h3>
-  </footer>
-</body>
-</html>
 
+<body>
+  <div class="container">
+    <header>
+      <h1>ししゃものホームページ</h1>
+    </header>
+
+    <main class="grid">
+      <!-- 所属 -->
+      <section class="card" id="affiliation">
+        <h2>所属</h2>
+        <ul>
+          <li>
+            広島市立大学大学院 情報科学研究科 情報工学専攻
+            <span class="date">2025年4月 ～ 現在</span>
+          </li>
+          <li>
+            コンピュータアーキテクチャ研究グループ
+            <span class="date">2023年10月 ～ 現在</span>
+          </li>
+          <li>
+            コンピュータアーキテクチャ研究室
+            <span class="date">2021年4月 ～ 2023年9月</span>
+          </li>
+          <li>
+            広島市立大学 情報科学部 情報工学科
+            <span class="date">2021年4月 ～ 2025年3月</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- クラブ/サークル -->
+      <section class="card" id="clubs">
+        <h2>クラブ / サークル</h2>
+        <ul>
+          <li>
+            いちぴろ・エクスプローラ（技術系サークル）
+            <span class="date">2023年10月 ～ 現在</span>
+          </li>
+          <li>
+            プログラミング同好会
+            <span class="date">2021年度 ～ 2022年度</span>
+          </li>
+          <li>
+            吹奏楽部
+            <span class="date">2021年度 ～ 2023年度</span>
+          </li>
+          <li>
+            大学祭実行委員会 システム局
+            <span class="date">2023年度</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 資格 -->
+      <section class="card" id="certifications">
+        <h2>資格</h2>
+        <ul>
+          <li>
+            普通自動車第一種運転免許（AT限定）
+            <span class="date">令和6年3月 取得</span>
+          </li>
+          <li>
+            基本情報技術者試験
+            <span class="date">令和4年度下期 合格</span>
+          </li>
+          <li>
+            実用数学技能検定 2級
+            <span class="date">令和2年8月 合格</span>
+          </li>
+          <li>
+            日本語ワープロ検定試験 準1級
+            <span class="date">令和2年7月 合格</span>
+          </li>
+          <li>
+            ITパスポート試験
+            <span class="date">令和元年8月 合格</span>
+          </li>
+          <li>
+            甲種危険物取扱者免状
+            <span class="date">令和元年8月 取得</span>
+          </li>
+          <li>
+            公益財団法人 日本習字教育財団 生徒部八段
+            <span class="date">平成30年 取得</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 参加歴 -->
+      <section class="card" id="events">
+        <h2>参加歴</h2>
+        <ul>
+          <li>
+            セキュキャン・キャンプ2025 ネクスト
+            <span class="date">2025年度</span>
+          </li>
+          <li>
+            セキュキャン・キャンプ2024 S06:Cコンパイラゼミ
+            <span class="date">2024年度</span>
+          </li>
+          <li>
+            西日本横断サイバーセキュリティ・グランプリ
+            <span class="date">令和5年度</span>
+          </li>
+          <li>
+            Ruby合宿2022春
+            <span class="date">2022年</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- アカウント -->
+      <section class="card" id="accounts">
+        <h2>アカウント</h2>
+        <ul class="accounts-list">
+          <li>
+            <a href="https://x.com/UMA_821" target="_blank" rel="noopener noreferrer" class="account-link">
+              <span>𝕏 (Twitter)</span>
+              <span class="account-name">@UMA_821</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://misskey.io/@shisyamo_821" target="_blank" rel="noopener noreferrer" class="account-link">
+              <span>Misskey</span>
+              <span class="account-name">@shisyamo_821@misskey.io</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Uma821" target="_blank" rel="noopener noreferrer" class="account-link">
+              <span>GitHub</span>
+              <span class="account-name">@Uma821</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://qiita.com/UMA821" target="_blank" rel="noopener noreferrer" class="account-link">
+              <span>Qiita</span>
+              <span class="account-name">@UMA821</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://atcoder.jp/users/uma821" target="_blank" rel="noopener noreferrer" class="account-link">
+              <span>AtCoder</span>
+              <span class="account-name">@uma821</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p class="footer-title">ししゃものホームページ</p>
+      <p class="copyright">&copy; 2026 Uma821</p>
+    </footer>
+  </div>
+</body>
+
+</html>
